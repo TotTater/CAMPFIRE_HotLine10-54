@@ -140,10 +140,20 @@
             <Image x:Name="imgBlackOpen_Copy"
                 Source="/pickytures/blackopen.png"
                 Width="1134"
-                Height="1749"
-                Canvas.Left="-82"
-                Canvas.Top="-46"
-                RenderTransformOrigin="0.513,0.273" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                Height="1748"
+                Canvas.Left="-117"
+                RenderTransformOrigin="0.513,0.273" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Top="-38"/>
+            <Image x:Name="imgOverHand"
+                Height="506" 
+                Canvas.Left="181" 
+                Source="/pickytures/overHand.png" 
+                Stretch="Fill" 
+                Canvas.Top="47" 
+                Width="579" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top"/>
+                
+                
 
         </Canvas>
     </Viewbox>

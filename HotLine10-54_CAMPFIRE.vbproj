@@ -11,12 +11,21 @@
     <None Remove="pickytures\bgmusic.mp3" />
     <None Remove="pickytures\blackopen.png" />
     <None Remove="pickytures\boo1.mp4" />
+    <None Remove="pickytures\boo10.mp4" />
+    <None Remove="pickytures\boo11.mp4" />
+    <None Remove="pickytures\boo12.mp4" />
+    <None Remove="pickytures\boo13.mp4" />
+    <None Remove="pickytures\boo14.mp4" />
+    <None Remove="pickytures\boo15.mp4" />
+    <None Remove="pickytures\boo16.mp4" />
     <None Remove="pickytures\boo2.mp4" />
     <None Remove="pickytures\boo3.mp4" />
     <None Remove="pickytures\boo4.mp4" />
     <None Remove="pickytures\boo5.mp4" />
     <None Remove="pickytures\boo6.mp4" />
     <None Remove="pickytures\boo7.mp4" />
+    <None Remove="pickytures\boo8.mp4" />
+    <None Remove="pickytures\boo9.mp4" />
     <None Remove="pickytures\convo.mp3" />
     <None Remove="pickytures\final.png" />
     <None Remove="pickytures\heels.mp3" />
@@ -26,6 +35,7 @@
     <None Remove="pickytures\MCMC.png" />
     <None Remove="pickytures\MCMO.png" />
     <None Remove="pickytures\MCtext.png" />
+    <None Remove="pickytures\overHand.png" />
     <None Remove="pickytures\phonedown.png" />
     <None Remove="pickytures\phonelinging.png" />
     <None Remove="pickytures\phoneringaudio.mp3" />
@@ -37,6 +47,36 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="pickytures\boo10.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo11.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo12.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo13.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo14.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo15.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo16.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="pickytures\boo8.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo9.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="pickytures\convo.mp3">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -48,6 +88,7 @@
     </Content>
     <Resource Include="pickytures\final.png" />
     <Resource Include="pickytures\LadyMC.png" />
+    <Resource Include="pickytures\overHand.png" />
     <Resource Include="pickytures\phonelinging.png" />
   </ItemGroup>
 

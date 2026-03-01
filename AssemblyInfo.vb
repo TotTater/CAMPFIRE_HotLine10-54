@@ -23,6 +23,7 @@ Class MainWindow
     Private Sub Window_Loaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
 
         imgBlackOpen_Copy.Visibility = Visibility.Hidden
+        imgOverHand.Visibility = Visibility.Hidden
 
         ' Background music
         mediaBGMusic.Source = New Uri(System.IO.Path.GetFullPath("pickytures/bgmusic.mp3"))
@@ -34,7 +35,7 @@ Class MainWindow
         mediaRing.Volume = 0
 
         ' Load boo videos
-        For i = 1 To 7
+        For i = 1 To 16
             booVideos.Add(System.IO.Path.GetFullPath("pickytures/boo" & i & ".mp4"))
         Next
 
@@ -90,6 +91,7 @@ Class MainWindow
     ' Phone ring sequence
     ' -------------------------
     Private Async Sub StartPhoneRingSequence()
+
         Await Task.Delay(2000)
         If phonePickedUp Then Return
 
@@ -98,6 +100,7 @@ Class MainWindow
 
         Await Task.Delay(4500)
         If phonePickedUp Then Return
+
 
         For i = 1 To 100
             mediaRing.Volume += 0.01
@@ -116,6 +119,7 @@ Class MainWindow
                 mediaRing.Stop()
                 Return
             End If
+
         End While
 
         ResetGame()
@@ -142,12 +146,14 @@ Class MainWindow
         moveTimer.Stop()
         mediaRing.Stop()
 
+
         imgPhoneDown.Visibility = Visibility.Hidden
         imgPhoneLining.Visibility = Visibility.Hidden
 
         imgShadowHand.Visibility = Visibility.Visible
         imgPickedUp.Visibility = Visibility.Visible
         imgSpeaking.Visibility = Visibility.Visible
+        Panel.SetZIndex(imgPickedUp, 8500)
 
         Dim startLeft = Canvas.GetLeft(imgSpeaking)
         speakMinLeft = startLeft - 10
@@ -168,6 +174,7 @@ Class MainWindow
         If currentLeft < speakMinLeft Then speakSprite = 1
 
         Canvas.SetLeft(imgSpeaking, currentLeft)
+        Panel.SetZIndex(imgSpeaking, 9000)
     End Sub
 
     ' -------------------------
@@ -175,7 +182,8 @@ Class MainWindow
     ' -------------------------
     Private Async Sub StartConversation()
         Await Task.Delay(2500)
-
+        Panel.SetZIndex(imgLadyClosed, 9000)
+        Panel.SetZIndex(imgLadyOpen, 9000)
         imgLadyClosed.Visibility = Visibility.Visible
         imgMCClosed.Visibility = Visibility.Visible
 
@@ -206,7 +214,7 @@ Class MainWindow
         imgMCOpen.Visibility = Visibility.Hidden
         imgMCOpen.Visibility = Visibility.Visible
 
-
+        Panel.SetZIndex(imgMCText, 9000)
         imgMCText.Visibility = Visibility.Visible
         mediaConvo.Stop()
         Await Task.Delay(2000) ' wait 2 seconds before final video/audio
