@@ -8,7 +8,6 @@
         ResizeMode="NoResize"
         Background="Black">
 
-    <!-- Viewbox scales everything to fill screen and maintain ratio -->
     <Viewbox Stretch="UniformToFill">
         <Canvas Width="900" Height="600">
 
@@ -19,7 +18,7 @@
                    Canvas.Left="0"
                    Canvas.Top="0"/>
 
-            <!-- Secret Button under hand/speaking -->
+            <!-- Secret Button -->
             <Button x:Name="btnSecret"
                     Width="230"
                     Height="169"
@@ -27,15 +26,28 @@
                     Canvas.Left="300"
                     Canvas.Top="131"/>
 
-            <!-- Secret video under hand/speaking -->
+            <!-- Secret video -->
             <MediaElement x:Name="mediaVideo"
-                          Width="230"
-                          Height="169"
-                          Canvas.Left="300"
-                          Canvas.Top="131"
-                          LoadedBehavior="Manual"
-                          UnloadedBehavior="Stop"
-                          Visibility="Hidden"/>
+              Width="900"
+              Height="600"
+              Canvas.Left="0"
+              Canvas.Top="0"
+              Stretch="UniformToFill"
+              LoadedBehavior="Manual"
+              UnloadedBehavior="Stop"
+              Visibility="Hidden"/>
+
+            <!-- Secret Boo Video Player (button-sized) -->
+            <MediaElement x:Name="mediaBooVideo"
+              Width="230"
+              Height="169"
+              Canvas.Left="300"
+              Canvas.Top="131"
+              Stretch="UniformToFill"
+              LoadedBehavior="Manual"
+              UnloadedBehavior="Stop"
+              Visibility="Hidden"/>
+
 
             <!-- Shadow Hand -->
             <Image x:Name="imgShadowHand"
@@ -85,26 +97,54 @@
             <!-- Black Opening -->
             <Image x:Name="imgBlackOpen"
                    Source="pickytures/blackopen.png"
-                   Width="1135"
+                   Width="1134"
                    Height="1749"
-                   Canvas.Left="-182"
-                   Canvas.Top="-50"
+                   Canvas.Left="-82"
+                   Canvas.Top="-14"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top"
                    RenderTransformOrigin="0.513,0.273"/>
 
-            <!-- Media elements for audio -->
+            <!-- Audio elements -->
             <MediaElement x:Name="mediaRing"
                           Width="1"
                           Height="1"
                           LoadedBehavior="Manual"
                           UnloadedBehavior="Stop"/>
-
             <MediaElement x:Name="mediaBGMusic"
                           Width="1"
                           Height="1"
                           LoadedBehavior="Manual"
                           UnloadedBehavior="Stop"/>
+            <MediaElement x:Name="mediaConvo"
+                          Width="1"
+                          Height="1"
+                          LoadedBehavior="Manual"
+                          UnloadedBehavior="Stop"/>
+
+            <!-- Conversation Images -->
+            <Image x:Name="imgLadyClosed" Source="/pickytures/LadyMC.png" Width="540" Height="364" Canvas.Left="360" Canvas.Top="0" Visibility="Hidden" Stretch="Fill"/>
+            <Image x:Name="imgLadyOpen" Source="/pickytures/LadyMO.png" Width="540" Height="364" Canvas.Left="360" Canvas.Top="0" Visibility="Hidden" Stretch="Fill"/>
+            <Image x:Name="imgMCClosed" Source="/pickytures/MCMC.png" Width="552" Height="427" Canvas.Left="0" Canvas.Top="173" Visibility="Hidden" Stretch="Fill"/>
+            <Image x:Name="imgMCOpen" Source="/pickytures/MCMO.png" Width="552" Height="427" Canvas.Left="0" Canvas.Top="173" Visibility="Hidden" Stretch="Fill"/>
+            <Image x:Name="imgMCText" Source="/pickytures/MCtext.png" Width="1005" Height="910" Canvas.Left="-105" Canvas.Top="-215" Visibility="Hidden" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            <!-- Final image after ja.mp4 + heels.mp3 -->
+            <Image x:Name="imgFinal"
+                   Source="/pickytures/final.png"
+                   Width="900"
+                   Height="600"
+                   Canvas.Left="0"
+                   Canvas.Top="0"
+                   Visibility="Hidden"/>
+            <Image x:Name="imgBlackOpen_Copy"
+                Source="/pickytures/blackopen.png"
+                Width="1134"
+                Height="1749"
+                Canvas.Left="-82"
+                Canvas.Top="-46"
+                RenderTransformOrigin="0.513,0.273" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
         </Canvas>
     </Viewbox>
 </Window>

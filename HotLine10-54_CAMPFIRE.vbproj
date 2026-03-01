@@ -17,16 +17,37 @@
     <None Remove="pickytures\boo5.mp4" />
     <None Remove="pickytures\boo6.mp4" />
     <None Remove="pickytures\boo7.mp4" />
+    <None Remove="pickytures\convo.mp3" />
+    <None Remove="pickytures\final.png" />
+    <None Remove="pickytures\heels.mp3" />
+    <None Remove="pickytures\ja .mp4" />
+    <None Remove="pickytures\LadyMC.png" />
+    <None Remove="pickytures\LadyMO.png" />
+    <None Remove="pickytures\MCMC.png" />
+    <None Remove="pickytures\MCMO.png" />
+    <None Remove="pickytures\MCtext.png" />
     <None Remove="pickytures\phonedown.png" />
     <None Remove="pickytures\phonelinging.png" />
     <None Remove="pickytures\phoneringaudio.mp3" />
     <None Remove="pickytures\pickedup.png" />
     <None Remove="pickytures\plainBg.png" />
+    <None Remove="pickytures\run.mp4" />
     <None Remove="pickytures\shadowhand.png" />
     <None Remove="pickytures\speaking.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="pickytures\convo.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\heels.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\run.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="pickytures\final.png" />
+    <Resource Include="pickytures\LadyMC.png" />
     <Resource Include="pickytures\phonelinging.png" />
   </ItemGroup>
 
@@ -43,7 +64,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="pickytures\bgmusic.mp3" />
+    <Content Include="pickytures\bgmusic.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="pickytures\LadyMO.png" />
+    <Resource Include="pickytures\MCMC.png" />
+    <Resource Include="pickytures\MCMO.png" />
+    <Resource Include="pickytures\MCtext.png" />
     <Resource Include="pickytures\blackopen.png" />
     <Content Include="pickytures\boo1.mp4">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
