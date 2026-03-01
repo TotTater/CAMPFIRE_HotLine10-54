@@ -1,12 +1,110 @@
 ﻿<Window x:Class="MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:HotLine10_54_CAMPFIRE"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Phone Game"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="Black">
 
-    </Grid>
+    <!-- Viewbox scales everything to fill screen and maintain ratio -->
+    <Viewbox Stretch="UniformToFill">
+        <Canvas Width="900" Height="600">
+
+            <!-- Background -->
+            <Image Source="pickytures/plainBg.png"
+                   Width="900"
+                   Height="600"
+                   Canvas.Left="0"
+                   Canvas.Top="0"/>
+
+            <!-- Secret Button under hand/speaking -->
+            <Button x:Name="btnSecret"
+                    Width="230"
+                    Height="169"
+                    Opacity="0.2"
+                    Canvas.Left="300"
+                    Canvas.Top="131"/>
+
+            <!-- Secret video under hand/speaking -->
+            <MediaElement x:Name="mediaVideo"
+                          Width="230"
+                          Height="169"
+                          Canvas.Left="300"
+                          Canvas.Top="131"
+                          LoadedBehavior="Manual"
+                          UnloadedBehavior="Stop"
+                          Visibility="Hidden"/>
+
+            <!-- Shadow Hand -->
+            <Image x:Name="imgShadowHand"
+                   Source="pickytures/shadowhand.png"
+                   Width="900"
+                   Height="600"
+                   Visibility="Hidden"
+                   Canvas.Left="0"
+                   Canvas.Top="0"/>
+
+            <!-- Picked Up -->
+            <Image x:Name="imgPickedUp"
+                   Source="pickytures/pickedup.png"
+                   Width="900"
+                   Height="600"
+                   Visibility="Hidden"
+                   Canvas.Left="0"
+                   Canvas.Top="0"/>
+
+            <!-- Speaking Sprite -->
+            <Image x:Name="imgSpeaking"
+                   Source="pickytures/speaking.png"
+                   Width="250"
+                   Height="250"
+                   Visibility="Hidden"
+                   Canvas.Left="360"
+                   Canvas.Top="10"/>
+
+            <!-- Phone Down -->
+            <Image x:Name="imgPhoneDown"
+                   Source="pickytures/phonedown.png"
+                   Width="500"
+                   Height="450"
+                   Visibility="Hidden"
+                   Canvas.Left="380"
+                   Canvas.Top="80"/>
+
+            <!-- Ring Sprite -->
+            <Image x:Name="imgPhoneLining"
+                   Source="pickytures/phonelinging.png"
+                   Width="180"
+                   Height="180"
+                   Visibility="Hidden"
+                   Canvas.Left="560"
+                   Canvas.Top="150"/>
+
+            <!-- Black Opening -->
+            <Image x:Name="imgBlackOpen"
+                   Source="pickytures/blackopen.png"
+                   Width="1135"
+                   Height="1749"
+                   Canvas.Left="-182"
+                   Canvas.Top="-50"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top"
+                   RenderTransformOrigin="0.513,0.273"/>
+
+            <!-- Media elements for audio -->
+            <MediaElement x:Name="mediaRing"
+                          Width="1"
+                          Height="1"
+                          LoadedBehavior="Manual"
+                          UnloadedBehavior="Stop"/>
+
+            <MediaElement x:Name="mediaBGMusic"
+                          Width="1"
+                          Height="1"
+                          LoadedBehavior="Manual"
+                          UnloadedBehavior="Stop"/>
+        </Canvas>
+    </Viewbox>
 </Window>

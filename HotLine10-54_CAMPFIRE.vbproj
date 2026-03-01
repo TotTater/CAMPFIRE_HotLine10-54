@@ -8,6 +8,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="pickytures\bgmusic.mp3" />
+    <None Remove="pickytures\blackopen.png" />
+    <None Remove="pickytures\boo1.mp4" />
+    <None Remove="pickytures\boo2.mp4" />
+    <None Remove="pickytures\boo3.mp4" />
+    <None Remove="pickytures\boo4.mp4" />
+    <None Remove="pickytures\boo5.mp4" />
+    <None Remove="pickytures\boo6.mp4" />
+    <None Remove="pickytures\boo7.mp4" />
+    <None Remove="pickytures\phonedown.png" />
+    <None Remove="pickytures\phonelinging.png" />
+    <None Remove="pickytures\phoneringaudio.mp3" />
+    <None Remove="pickytures\pickedup.png" />
+    <None Remove="pickytures\plainBg.png" />
+    <None Remove="pickytures\shadowhand.png" />
+    <None Remove="pickytures\speaking.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="pickytures\phonelinging.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Import Include="System.Windows" />
     <Import Include="System.Windows.Controls" />
     <Import Include="System.Windows.Data" />
@@ -17,6 +40,40 @@
     <Import Include="System.Windows.Media.Imaging" />
     <Import Include="System.Windows.Navigation" />
     <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="pickytures\bgmusic.mp3" />
+    <Resource Include="pickytures\blackopen.png" />
+    <Content Include="pickytures\boo1.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo2.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo3.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo4.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo5.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo6.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="pickytures\boo7.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="pickytures\phonedown.png" />
+    <Content Include="pickytures\phoneringaudio.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="pickytures\pickedup.png" />
+    <Resource Include="pickytures\plainBg.png" />
+    <Resource Include="pickytures\shadowhand.png" />
+    <Resource Include="pickytures\speaking.png" />
   </ItemGroup>
 
 </Project>
